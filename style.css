@@ -1,0 +1,352 @@
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;700&display=swap");
+
+
+:root{
+  --intel-blue: hsl(219, 100%, 25%);
+  --intel-bright: hsl(215, 85%, 55%);
+  --intel-light: hsl(206, 85%, 92%);
+  --intel-ink: hsl(220, 35%, 12%);
+  --intel-white: #ffffff;
+}
+
+html, body{
+  margin: 0px;
+  padding: 0px;
+}
+
+body{
+  background-color: hsl(210, 40%, 96%);
+  background-image: linear-gradient(
+    180deg,
+    hsl(210, 40%, 98%),
+    hsl(210, 40%, 94%)
+  );
+  color: var(--intel-ink);
+}
+
+header{
+  background-color: var(--intel-blue);
+  background-image: linear-gradient(
+    rgba(0, 59, 117, 0.65),
+    rgba(0, 122, 204, 0.45)
+  ), url("img/istockphoto-2129019331-612x612.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  padding: 45px 0px;
+  text-align: center;
+  color: white;
+  border-bottom: 6px solid var(--intel-bright);
+}
+
+header h1{
+  letter-spacing: 1px;
+  text-shadow: 0 2px 6px rgba(0, 0, 0, 0.3);
+}
+
+header p{
+  max-width: 720px;
+  margin: 10px auto 0px;
+}
+
+*{
+  font-family: "Noto Sans", sans-serif;
+  font-weight: 700;
+}
+
+main{
+  margin: 30px ;
+}
+
+h1{
+    text-align: center;
+    font-size: 60px;
+}
+
+h2{
+    margin-top: 20px;
+    margin-bottom: 10px;
+    font-size: 45px;
+    text-align: center;
+    color: var(--intel-blue);
+}
+
+h3{
+    margin-top: 20px;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+p{
+  font-family: "Helvetica", "Arial", sans-serif;
+  font-weight: 400;
+  line-height: 1.6;
+  padding: 15px;
+  text-align: center;
+}
+
+.navbar{
+  background-color: var(--intel-blue);
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  padding: 0 16px;
+  border-bottom: 3px solid var(--intel-bright);
+  box-shadow: 0 6px 14px rgba(0, 0, 0, 0.12);
+}
+
+.navbar-logo{
+  width: 120px;
+  height: auto;
+  display: block;
+}
+
+.navbar ul{
+    list-style: none;
+    padding: 0px;
+    margin: 0px;
+  display: flex;
+  margin-left: auto;
+
+}
+
+.navbar a{
+    color: white;
+    text-decoration: none;
+    padding: 30px 25px;
+    display: block;
+    text-align: center;
+  letter-spacing: 0.5px;
+
+}
+
+.navbar a:hover{
+  background-color: hsl(219, 100%, 20%);
+}
+
+.navbar a:hover{
+  box-shadow: inset 0 -3px 0 rgba(0, 170, 255, 0.8);
+}
+
+
+section img{
+  width: 100%;
+  height: auto;
+  display: block;
+  margin: 12px auto;
+}
+
+section img[src="img/intel1.jpg"]{
+  width: 400px;
+  height: 200px;
+  object-fit: cover;
+}
+
+section img[src="img/2.jpg"]{
+   width: 400px;
+  height: 200px;
+  object-fit: cover;
+}
+section img[src="img/3.jpg"]{
+ width: 400px;
+  height: 200px;
+  object-fit: cover;
+}
+
+section img[src="img/4.jpg"]{
+ width: 400px;
+  height: 300px;
+  object-fit: cover;
+}
+
+section img[src="img/5.jpg"]{
+ width: 400px;
+  height: 300px;
+  object-fit: cover;
+}
+
+section img[src="img/6.jpg"]{
+  width: 300px;
+  height: 300px;
+  object-fit: cover;
+} 
+
+section img[src="img/7.jpg"]{
+  width: 400px;
+  height: 250px;
+  object-fit: cover;
+}
+
+section img[src="img/8.jpg"]{
+  width: 400px;
+  height: 250px;
+  object-fit: cover;
+}
+
+section img[src="img/9.jpg"]{
+  width: 400px;
+  height: 250px;
+  object-fit: cover;
+}
+
+
+.timeline-wrap{
+  position: relative;
+  max-width: 1400px;
+  margin: 0px auto;
+  padding: 0px 70px;
+}
+
+.timeline{
+  display: flex;
+  flex-wrap: nowrap;
+  gap: 20px;
+  justify-content: flex-start;
+  padding: 20px 0px;
+  overflow-x: auto;
+  scroll-behavior: smooth;
+  scroll-snap-type: x mandatory;
+  -webkit-overflow-scrolling: touch;
+}
+
+.scroll-button{
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 52px;
+  height: 52px;
+  border-radius: 50%;
+  border: none;
+  background-color: rgba(0, 59, 117, 0.95);
+  color: #ffffff;
+  font-size: 26px;
+  cursor: pointer;
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.25);
+  border: 2px solid rgba(255, 255, 255, 0.55);
+}
+
+.scroll-button--left{
+  left: 18px;
+}
+
+.scroll-button--right{
+  right: 18px;
+}
+
+.scroll-button:hover{
+  background-color: rgba(0, 82, 160, 0.98);
+}
+
+.timeline .milestone{
+  background-color: hsl(210, 60%, 98%);
+  padding: 12px;
+  flex: 0 0 calc((100% - 60px) / 4);
+  border: 2px solid hsl(210, 60%, 82%);
+  border-top: 6px solid var(--intel-bright);
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.08);
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+  scroll-snap-align: start;
+}
+
+.timeline .milestone{
+  background-image: linear-gradient(
+    180deg,
+    rgba(255, 255, 255, 0.9),
+    rgba(232, 245, 255, 0.7)
+  );
+}
+
+@media (max-width: 700px){
+  h1{
+    font-size: 36px;
+  }
+
+  h2{
+    font-size: 28px;
+  }
+
+  h3{
+    font-size: 18px;
+  }
+
+  p{
+    padding: 10px;
+  }
+
+  .navbar{
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 10px 16px;
+  }
+
+  .navbar ul{
+    flex-wrap: wrap;
+    margin-left: 0px;
+  }
+
+  .navbar a{
+    padding: 12px 14px;
+  }
+
+  .navbar-logo{
+    width: 96px;
+  }
+
+  .timeline{
+    flex-direction: column;
+    overflow-x: visible;
+  }
+
+  .scroll-button{
+    display: none;
+  }
+
+  .timeline .milestone{
+    flex: 1 1 auto;
+    width: 100%;
+    max-width: 520px;
+    margin: 0px auto 12px;
+  }
+
+  section img[src="img/intel1.jpg"],
+  section img[src="img/2.jpg"],
+  section img[src="img/3.jpg"],
+  section img[src="img/4.jpg"],
+  section img[src="img/5.jpg"],
+  section img[src="img/6.jpg"],
+  section img[src="img/7.jpg"],
+  section img[src="img/8.jpg"],
+  section img[src="img/9.jpg"]{
+    width: 100%;
+    height: auto;
+  }
+}
+
+.timeline .milestone .details{
+  opacity: 0;
+  max-height: 0px;
+  overflow: hidden;
+  padding: 0px 15px;
+  font-weight: 400;
+  transition: opacity 0.25s ease, max-height 0.25s ease;
+}
+
+.timeline .milestone img:hover + .details,
+.timeline .milestone:hover .details{
+  opacity: 1;
+  max-height: 220px;
+  padding: 15px;
+}
+
+.timeline .milestone:hover{
+  transform: translateY(-4px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+}
+
+footer {
+  text-align: center;
+  margin: 0px;
+  padding: 20px 0px;
+  background-color: var(--intel-blue);
+  color: white;
+}
