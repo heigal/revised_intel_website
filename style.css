@@ -2,10 +2,10 @@
 
 
 :root{
-  --intel-blue: hsl(219, 100%, 25%);
-  --intel-bright: hsl(215, 85%, 55%);
-  --intel-light: hsl(206, 85%, 92%);
-  --intel-ink: hsl(220, 35%, 12%);
+  --intel-blue: hsl(221, 100%, 18%);
+  --intel-bright: hsl(210, 90%, 38%);
+  --intel-light: hsl(210, 60%, 96%);
+  --intel-ink: hsl(222, 45%, 10%);
   --intel-white: #ffffff;
 }
 
@@ -15,11 +15,11 @@ html, body{
 }
 
 body{
-  background-color: hsl(210, 40%, 96%);
+  background-color: hsl(210, 45%, 97%);
   background-image: linear-gradient(
     180deg,
-    hsl(210, 40%, 98%),
-    hsl(210, 40%, 94%)
+    hsl(210, 45%, 98%),
+    hsl(210, 45%, 94%)
   );
   color: var(--intel-ink);
 }
@@ -27,8 +27,8 @@ body{
 header{
   background-color: var(--intel-blue);
   background-image: linear-gradient(
-    rgba(0, 59, 117, 0.65),
-    rgba(0, 122, 204, 0.45)
+    rgba(0, 45, 92, 0.75),
+    rgba(0, 90, 160, 0.55)
   ), url("img/istockphoto-2129019331-612x612.jpg");
   background-size: cover;
   background-position: center;
@@ -121,7 +121,7 @@ p{
 }
 
 .navbar a:hover{
-  background-color: hsl(219, 100%, 20%);
+  background-color: hsl(221, 100%, 14%);
 }
 
 .navbar a:hover{
@@ -238,10 +238,10 @@ section img[src="img/9.jpg"]{
 }
 
 .timeline .milestone{
-  background-color: hsl(210, 60%, 98%);
+  background-color: hsl(210, 60%, 99%);
   padding: 12px;
   flex: 0 0 calc((100% - 60px) / 4);
-  border: 2px solid hsl(210, 60%, 82%);
+  border: 2px solid hsl(210, 45%, 70%);
   border-top: 6px solid var(--intel-bright);
   box-shadow: 0 6px 16px rgba(0, 0, 0, 0.08);
   transition: transform 0.25s ease, box-shadow 0.25s ease;
@@ -343,10 +343,114 @@ section img[src="img/9.jpg"]{
   box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
 }
 
+/* Three-column section */
+.three-col-section{
+  margin: 30px auto 0px;
+  padding: 0px 10px 10px;
+}
+
+/* Simple card style for the info section */
+.info-card{
+  background-color: #ffffff;
+  border: 2px solid hsl(210, 45%, 70%);
+  padding: 16px;
+  height: 100%;
+}
+
+.info-card h3{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+}
+
+.info-text{
+  min-height: 60px;
+}
+
+/* Consistent Learn More button */
+.learn-more{
+  display: inline-block;
+  background-color: var(--intel-bright);
+  border-color: var(--intel-bright);
+}
+
+.learn-more:hover{
+  background-color: hsl(210, 90%, 30%);
+  border-color: hsl(210, 90%, 30%);
+}
+
 footer {
   text-align: center;
   margin: 0px;
   padding: 20px 0px;
   background-color: var(--intel-blue);
   color: white;
+}
+
+footer a{
+  color: #ffffff;
+  text-decoration: underline;
+}
+
+.subscribe-bar{
+  border: 2px solid rgba(255, 255, 255, 0.5);
+  background-color: rgba(255, 255, 255, 0.12);
+}
+
+.subscribe-input{
+  border: 2px solid rgba(0, 45, 92, 0.6);
+}
+
+.subscribe-button{
+  background-color: var(--intel-bright);
+}
+
+/* Subscription form in the footer */
+.subscribe-bar{
+  max-width: 700px;
+  margin: 0px auto 20px;
+  padding: 16px;
+  border: 2px solid rgba(255, 255, 255, 0.3);
+  background-color: rgba(255, 255, 255, 0.08);
+}
+
+.subscribe-text{
+  margin: 6px 0px 12px;
+}
+
+.subscribe-form{
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  justify-content: center;
+  align-items: center;
+}
+
+.subscribe-label{
+  font-weight: 700;
+}
+
+.subscribe-input{
+  padding: 10px 12px;
+  border: 2px solid rgba(255, 255, 255, 0.6);
+  background-color: #ffffff;
+  color: var(--intel-ink);
+  min-width: 220px;
+}
+
+.subscribe-input::placeholder{
+  color: #4a4a4a;
+}
+
+.subscribe-button{
+  padding: 10px 16px;
+  border: none;
+  background-color: var(--intel-bright);
+  color: #ffffff;
+  cursor: pointer;
+}
+
+.subscribe-button:hover{
+  background-color: hsl(215, 85%, 45%);
 }
